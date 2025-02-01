@@ -1,4 +1,6 @@
+import { Header } from "@/components/Header";
 import "./globals.css";
+import { MessageProvider } from "@/contexts/appContext";
 
 export const metadata = {
   title: "MotivatorAI",
@@ -8,9 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <MessageProvider>
       <body>
+        <Header />
         {children}
       </body>
+      </MessageProvider>
     </html>
   );
 }
