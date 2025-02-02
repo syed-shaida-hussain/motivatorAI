@@ -14,7 +14,7 @@ export const Header = () => {
       }
   return (
     <header className={isDark ? "dark" : "light"} >
-        <div className="bg-backgroundColor text-textColor flex gap-2 items-center justify-around p-5">
+        <div className="bg-backgroundColor h-[10vh] text-textColor flex gap-2 items-center justify-around px-5">
             <Link href="/" className="flex items-center gap-2">
                 <IoLogoDropbox className="w-7 h-7"/>
                 <span className="font-medium">MotivatorAI</span>
